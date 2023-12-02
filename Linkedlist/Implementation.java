@@ -19,6 +19,18 @@ public class Implementation {
        }
         var newlist = insertAtGivenLast(insertNew, 2, 34);
         recursiveCall(newlist);
+        System.out.println("delete First");
+        var deleteFirst= deleteFirstNode(newlist);
+        recursiveCall(deleteFirst);
+        System.out.println("delete Last");
+        var deleteLast = deleteLastNode(deleteFirst);
+        recursiveCall(deleteLast);
+
+        int idx = serachData(deleteLast, 34);
+        System.out.println("Index is " + idx);
+
+        System.out.println("Index recursive call " + searchDataRecursive(deleteFirst, 30));
+
     }
     public static LinkedList recursiveCall(LinkedList node)
     {
@@ -71,6 +83,71 @@ public class Implementation {
         curr.node = temp;
 
         return  head;
+
+    }
+
+    public  static LinkedList deleteFirstNode(LinkedList head)
+    {
+        if(head == null)
+        {
+            return  null;
+        }
+        return  head.node;
+    }
+
+    public  static LinkedList deleteLastNode(LinkedList head)
+    {
+        if(head == null)
+        {
+            return  null;
+        }
+        LinkedList curr= head;
+        while (curr.node.node != null)
+        {
+           curr = curr.node;
+        }
+        curr.node = null;
+        return  head;
+    }
+
+
+    public static int serachData(LinkedList list, int data)
+    {
+        var curr = list;
+        int  i = 0;
+        while (curr != null)
+        {
+            if(curr.data == data)
+            {
+                return  i;
+            }
+            curr = curr.node;
+            i++;
+        }
+        return  -1;
+    }
+
+
+    public static  int searchDataRecursive(LinkedList list, int data)
+    {
+        if(list == null)
+        {
+            return  -1;
+        }
+        if(list.data == data)
+        {
+            return 1;
+        }
+        else{
+            int res =  searchDataRecursive(list.node, data);
+            if(res == -1)
+            {
+                return  -1;
+            }
+            else {
+                return res+1;
+            }
+        }
 
     }
 }
