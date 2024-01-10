@@ -1,0 +1,6 @@
+Stack is First In Last Out
+    Push - add element at last
+    Pop - remove last element
+    isEmpty: check whether stack is empty;
+    peek: returns top element
+    size - return size
