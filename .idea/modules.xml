@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Common/Common.iml" filepath="$PROJECT_DIR$/Common/Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSAInterviewSoFar/DSAInterviewSoFar.iml" filepath="$PROJECT_DIR$/DSAInterviewSoFar/DSAInterviewSoFar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructure.iml" filepath="$PROJECT_DIR$/DataStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GeeksForGeeks/GeeksForGeeks.iml" filepath="$PROJECT_DIR$/GeeksForGeeks/GeeksForGeeks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterViewQuestions/InterViewQuestions.iml" filepath="$PROJECT_DIR$/InterViewQuestions/InterViewQuestions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaInterview/JavaInterview.iml" filepath="$PROJECT_DIR$/JavaInterview/JavaInterview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stack/Stack.iml" filepath="$PROJECT_DIR$/Stack/Stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tree/Tree.iml" filepath="$PROJECT_DIR$/Tree/Tree.iml" />
+    </modules>
+  </component>
+</project>

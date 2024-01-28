@@ -1,0 +1,3 @@
+Linkedlist - 
+store data but not in continous memory location
+it's easy to perform insertion, deletion, updation at middle also
